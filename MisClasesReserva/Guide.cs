@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MisClasesReserva
+namespace MisClasesReserva;
+
+public class Guide:Persona
 {
-    internal class Guia:Persona
-    {
-    }
 }

@@ -7,7 +7,7 @@ namespace MisClasesReserva
 }
 internal class Tiquete
 {
-    public int Id { get; set; } = 0; //Generar aleatoriamente
+    public int Id { get; set; } = 0; //Generar aleat.
     public string Documento { get; set; }
     public DateTime Fecha { get; set; }
 

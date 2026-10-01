@@ -2,23 +2,22 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MisClasesReserva
-{
-}
-internal class Especie
-{
-    public string NombreComun { get; set; } = "";
-    public string NombreCientifico { get; set; } = "";
-    public string ReinoBiologico { get; set; } = "";
-    public string Estado { get; set; } = "";
-    public int Poblacion { get; set; }
+namespace MisClasesReserva;
 
-    public string MostrarDetalles()
+public class Species
+{
+    public string CommonName { get; set; } = "";
+    public string ScientificName { get; set; } = "";
+    public string Kingdom { get; set; } = "";
+    public string ConservationStatus { get; set; } = "";
+    public int Population { get; set; }
+
+    public string ShowDetails()
     {
 
-        return $" Detalles de la especie: \nNombre Común: {NombreComun}\nNombre científico: {NombreCientifico}\nReino Biológico: {Estado}\nNombre científico: {Poblacion}";
+        return $" Detalles de la especie: \nNombre Común: {CommonName}\nNombre científico: {ScientificName}\nReino Biológico: {ConservationStatus}\nNombre científico: {Population}";
 
     }
 
 }
-}
+

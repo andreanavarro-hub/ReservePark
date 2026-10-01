@@ -1,4 +1,4 @@
-﻿# Reserva natural
+﻿## Reserva natural
 
 El proyecto consiste en desarrollar un sistema para la gestión y organización de las actividades 
 de una reserva natural. La aplicación permitirá administrar información relacionada con los 

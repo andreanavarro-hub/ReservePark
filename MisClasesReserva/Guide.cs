@@ -4,6 +4,7 @@ using System.Text;
 
 namespace MisClasesReserva;
 
-public class Guide:Persona
+public class Guide:Person
 {
+
 }

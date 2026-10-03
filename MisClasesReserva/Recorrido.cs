@@ -10,10 +10,10 @@ namespace MisClasesReserva
         public string Name { get; set; } = "";
         public int Dificulty { get; set; } = 3;
         public double Price { get; set; }
-        public Guia GuideInCharge { get; set; }
+        public Guide GuideInCharge { get; set; }
         public List<Visitante> Visitors { get; set; } = new ();
 
-        public Tour(string name, double price, Guia guideInCharge)
+        public Tour(string name, double price, Guide guideInCharge)
         {
             Name = name;
             Price = price;
@@ -28,7 +28,7 @@ namespace MisClasesReserva
             string personas = $"Listado de visitantes para el recorrido {this.Name}";
             foreach(Visitante v in Visitantes)  //Cuidado: Creo que hay que convertir el tipo de visitante a persona (Parsear)
             {
-                personas += $"{v.Nombre} {v.Documento}"; //Cambiar esto
+                personas += $"{v.Name} {v.IdCard}"; //Cambiar esto
 
 
             }

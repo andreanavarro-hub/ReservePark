@@ -8,7 +8,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace MisClasesReserva
 {
 }
-internal class Visitante : Persona
+internal class Visitante : Person
 {
     public Tiquete TiqueteVisitante { get; set; } //En constructor se instancia porque requiere de los datos
     public bool EsEstudiante { get; set; }
@@ -17,10 +17,10 @@ internal class Visitante : Persona
     public Visitante(Tiquete tiqueteVisitante, int id, string nombre, string documento, int edad) : base(id, nombre, documento, edad)
     {
         TiqueteVisitante = new Tiquete(documento);
-        Nombre = nombre;
+        Name = nombre;
         Id = id;
-        Documento = documento;
-        Edad = edad;
+        IdCard = documento;
+        Age = edad;
     }
 
     public DeterminarCategoria(int Edad, ) //Fecha nacicimiento ??

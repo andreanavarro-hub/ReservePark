@@ -1,18 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Xml.Linq;
 
 namespace MisClasesReserva
 {
 }
 internal class Researcher : Person
 {
-    public Researcher(int id, string nombre, string documento, int edad) : base(id, nombre, documento, edad)
+    public Researcher(int id, string name, string IdCard, int Age) : base(id,name, IdCard, Age)
     {
         Id = id;
-        Name = nombre;
-        Documento = documento;
-        Edad = edad;
+        Name = name;
+        IdCard = idCard;
+        Age = edad;
     }
 
 }

@@ -12,7 +12,7 @@ namespace MisClasesReserva
         public double Hectareas { get; set; }
         public int NivelProteccion { get; set; }
         public int CapacidadMaxima { get; set; }
-        public List<>
+        public List<Species> SpeciesList { get; set; } = new();
 
 
 

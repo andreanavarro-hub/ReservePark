@@ -3,14 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace MisClasesReserva
 {
 }
 internal class Visitante : Person
 {
-    public Tiquete TiqueteVisitante { get; set; } //En constructor se instancia porque requiere de los datos
+    public Tiquete TiqueteVisitante { get; set; }
     public bool EsEstudiante { get; set; }
     public string Categoria { get; private set; }
 
@@ -22,10 +21,5 @@ internal class Visitante : Person
         IdCard = documento;
         Age = edad;
     }
-
-    public DeterminarCategoria(int Edad, ) //Fecha nacicimiento ??
-    { }
-
-
 
 }
